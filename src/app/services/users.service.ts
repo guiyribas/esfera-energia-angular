@@ -20,7 +20,6 @@ export class UsersService {
 
   // get
   loadByID(id) {
-    console.log(this.API_URL_USERS + `/${id}`);
     return this.http.get<User>(this.API_URL_USERS + `/${id}`).pipe(take(1));
   }
 

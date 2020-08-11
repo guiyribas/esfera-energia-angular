@@ -26,7 +26,6 @@ export class UsersListComponent implements OnInit {
   onRefresh() {
     this.usersService.list().subscribe((res) => {
       this.allUsers = res;
-      console.log(this.allUsers);
       this.changeDetectorRefs.detectChanges();
     });
   }

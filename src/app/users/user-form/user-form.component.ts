@@ -21,8 +21,6 @@ export class UserFormComponent {
     private route: ActivatedRoute,
     private usersService: UsersService
   ) {
-    // const user = this.route.snapshot.data.user;
-    console.log('user ', this.user);
 
     this.userForm = new FormGroup({
       name: new FormControl({ value: this.user.name, disabled: true }),

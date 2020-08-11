@@ -19,7 +19,6 @@ export class UserResolverGuard implements Resolve<User> {
     state: RouterStateSnapshot
   ): Observable<User> {
     if (route.params && route.params.id) {
-      console.log(route.params.id);
       return this.usersService.loadByID(route.params.id);
     }
 
